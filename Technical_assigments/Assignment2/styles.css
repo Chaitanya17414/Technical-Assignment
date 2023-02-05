@@ -1,0 +1,125 @@
+/* Variable Declaration
+________________________________________ */
+/* Navbar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main {
+  margin: 30px auto;
+  width: 50%;
+  font-family: system-ui;
+}
+.header-section {
+  border-bottom: 1.5px solid #496bc7;
+}
+.header-section .container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-section .container .select-section .label {
+  font-size: 18px;
+}
+.header-section .container .select-section #citySelect {
+  font-size: 18px;
+  padding: 5px 5px 10px;
+}
+.header-section .container .select-section .add-item {
+  float: right;
+  padding-left: 20px;
+}
+.header-section .container .select-section #message {
+  margin: 10px 50px;
+  color: red;
+}
+button {
+  cursor: pointer;
+  display: block;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 0 12px;
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+  background-color: #f47033;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Listing section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.ajax-list {
+  margin: 70px 0 20px;
+}
+.ajax-list .textAlignCenter {
+  text-align: center;
+}
+.ajax-list .textAlignCenter .fa-spinner {
+  display: none;
+  font-size: 20px;
+}
+.ajax-list ul {
+  list-style: none;
+}
+.ajax-list .weather-city-list {
+  display: grid;
+  grid-gap: 30px;
+  padding-left: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+.ajax-list .weather-city-list .remove-list {
+  display: none;
+}
+.ajax-list .weather-city-list .city-data {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 40px;
+  background-image: linear-gradient(180deg, #8a878763, #dcd7d700);
+}
+.ajax-list .weather-city-list .city-data .name-section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #496bc7;
+}
+.ajax-list .weather-city-list .city-data .name-section .icon-adjust {
+  display: flex;
+  align-items: center;
+}
+.ajax-list .weather-city-list .city-data .city-desc {
+  text-align: right;
+}
+.ajax-list .weather-city-list .city-data .city-feels-temp {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ajax-list .weather-city-list .city-data .city-temp {
+  font-size: 65px;
+  font-weight: 400 !important;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #f47033;
+  font-family: system-ui;
+}
+.ajax-list .weather-city-list .city-data .city-temp .celcius {
+  font-size: 50px;
+}
+.ajax-list .weather-city-list .city-data .sun-position {
+  display: flex;
+  justify-content: space-between;
+}
+.ajax-list .weather-city-list .city-data .sun-position .sunrise,
+.ajax-list .weather-city-list .city-data .sun-position .sunset {
+  font-size: 30px;
+  text-align: center;
+}
+.ajax-list .weather-city-list .city-data .sun-position .sunrise-data,
+.ajax-list .weather-city-list .city-data .sun-position .sunset-data {
+  font-size: 12px;
+}
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer button {
+  float: right;
+}
