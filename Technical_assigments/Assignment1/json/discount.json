@@ -1,0 +1,18 @@
+[
+    {
+        "discountCupon":"Z4OV52SU",
+        "discountPercentage":"10"
+    },
+    {
+        "discountCupon":"C6OV52SU",
+        "discountPercentage":"15"
+    },
+    {
+        "discountCupon":"Test10",
+        "discountPercentage":"20"
+    },
+    {
+        "discountCupon":"PROMOCODE",
+        "discountPercentage":"5"
+    }
+]

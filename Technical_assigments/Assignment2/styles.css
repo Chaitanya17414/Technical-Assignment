@@ -4,7 +4,7 @@ ________________________________________ */
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .main {
   margin: 30px auto;
-  width: 50%;
+  width: 60%;
   font-family: system-ui;
 }
 .header-section {
@@ -28,8 +28,9 @@ ________________________________________ */
   padding-left: 20px;
 }
 .header-section .container .select-section #message {
-  margin: 10px 50px;
+  margin: 10px 55px;
   color: red;
+  font-size: 14px;
 }
 button {
   cursor: pointer;
@@ -43,10 +44,6 @@ button {
   font-size: 18px;
   background-color: #f47033;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
 /* Listing section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .ajax-list {
@@ -58,6 +55,7 @@ img {
 .ajax-list .textAlignCenter .fa-spinner {
   display: none;
   font-size: 20px;
+  width: 100px;
 }
 .ajax-list ul {
   list-style: none;

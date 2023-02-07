@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3d817a92e8.js" crossorigin="anonymous"></script>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Shooping App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-section">
+                <div class="icon-widget">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-grip"></i>
+                </div>
+                <div class="name-price-section">
+                    <div class="name-section">
+                        <label for="name-select">Name:</label>
+                
+                        <select name="name" id="name-select">
+                            <option value="">All</option>
+                            <option value="dog">A-Z</option>
+                            <option value="cat">Z-A</option>
+                        </select>
+                    </div>
+                    <div class="price-section">
+                        <label for="price-select">Price:</label>
+                
+                        <select name="name" id="name-select">
+                            <option value="">All</option>
+                            <option value="dog">Low-High</option>
+                            <option value="cat">High-low</option>
+                        </select>
+                    </div>
+                    <div class="filter-section">
+                        <p class="filters"><i class="fa-solid fa-arrow-down-wide-short"></i> Filters</p>
+                        <div class="filter-container">
+                            <div>
+                                <p>Filter by name:</p>
+                                <input placeholder="Seach here" class="filter-input"/>
+                            </div>
+                            <div class="filter-price">
+                                <p>Filter by price:</p>
+                                <div class="slider-box">
+                                    <input type="text" id="priceRange" readonly>
+                                    <div id="price-range" class="slider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="sorting-section">
+                <label for="sort">Sort:</label>
+                
+                <select name="name" id="sort-select">
+                    <option value="name">Name</option>
+                    <option value="price">Price Low To High</option>
+                    <option value="price">Price High To Low</option>
+                </select>
+            </div> 
+        </div>
+        <div class="products-section">
+            <div class="products"></div>
+            <div class="cart-section">
+                <h3 class="mycart-headding">My cart</h3>
+                <div class="mycart-summary">
+                    <div class="product-data">
+                        <ul class="productName"></ul>
+                        <ul class="productPrice"></ul>
+                        <ul class="productHiddenPrice"></ul>
+                    </div>
+                    <div class="product-data">
+                        <ul class="dis-code"></ul>
+                        <ul class="dis-amount"></ul>
+                    </div>
+                </div>
+                <div class="discount">
+                    <input placeholder="Enter Discount Code" class="discount-input">
+                    <button type="button" class="add-btn">Add</button>
+                </div>
+                <p class="error"></p>
+                <div class="sub-total">
+                    <div class="subtotal d-flex">
+                        <p>Sub total</p>
+                        <p class="total-price"></p>
+                    </div>
+                    <div class="service-tax d-flex">
+                        <p>Service tax(21%)</p>
+                        <p class="tax-amount"></p>
+                    </div>
+                    <ul class="total-discount">
+                    </ul>
+                </div>
+                <div class="total">
+                    <p >Total</p>
+                    <p class="total-amount"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

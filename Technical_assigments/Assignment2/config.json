@@ -1,0 +1,42 @@
+[
+     {
+      "cityName": "Pune",
+      "cityValue": "Pune"
+    },
+    {
+      "cityName": "Hyderabad",
+      "cityValue": "Hyderabad"
+    },
+   {
+      "cityName": "Chennai",
+      "cityValue": "Chennai"
+    },
+    {
+      "cityName": "Delhi",
+      "cityValue": "Delhi"
+    },
+    {
+      "cityName": "Mumbai",
+      "cityValue": "Mumbai"
+    },
+    {
+      "cityName": "New york",
+      "cityValue": "New York"
+    },
+    {
+      "cityName": "London",
+      "cityValue": "London"
+    },
+    {
+      "cityName": "San Francisco",
+      "cityValue": "San Francisco"
+    },
+    {
+      "cityName": "Manali",
+      "cityValue": "Manali"
+    },
+    {
+      "cityName": "America",
+      "cityValue": "America"
+    }
+]

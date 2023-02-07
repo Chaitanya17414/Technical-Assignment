@@ -1,0 +1,73 @@
+[
+    {
+          "sku": "kzp0en6knn",
+          "name": "Moto Z2",
+          "price" : "3999",
+          "imageUrl" : "https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/l/l/f/-original-imaggm6th9kpgkjh.jpeg?q=70"
+        },
+        {
+          "sku": "699mutjv45",
+          "name": "Iphone X",
+          "price" : "12999",
+          "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/b/u/f/-original-imaghxa5hvapbfds.jpeg"
+        },
+        {
+          "sku": "l9v8cy2a8z",
+          "name": "Samsung s9",
+          "price" : "11999",
+          "imageUrl" : "https://www.t-mobile.com/content/dam/t-mobile/en-p/cell-phones/samsung/samsung-galaxy-s9-plus/lilac-purple/Samsung-Galaxy-S9-Plus-Lilac-Purple-2-3x.jpg"
+        },     
+        {
+          "sku": "cqiwhz6jq8",
+          "name": "Lenovo P2",
+          "price" : "8999",
+          "imageUrl" : "https://www.91-img.com/pictures/lenovo-p2-3gb-ram-mobile-phone-large-1.jpg"
+        },
+        {
+          "sku": "vaingspk0a",
+          "name": "OnePlus 6T",
+          "price" : "8999",
+          "imageUrl" : "https://m.media-amazon.com/images/I/61-FZzBlpsL.jpg"
+        },
+        {
+        "sku" : "apple11i",
+        "name" : "APPLE iPhone 11",
+        "price" : "48900",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/q/z/g/iphone-11-128-a-mwm32hn-a-apple-0-original-imafkg25hjmuy98e.jpeg"
+    },{
+        "sku" : "vivoT1144",
+        "name" : "vivo T1 44W",
+        "price" : "19990",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/l2p23rk0/mobile/s/4/3/-original-imagdznhcbdfwfud.jpeg"
+    },
+    {
+        "sku" : "Infini10",
+        "name" : "Infinix HOT 20 Play",
+        "price" : "11999",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/a/p/r/-original-imagkgrxwg386pjk.jpeg"
+    },
+    {
+        "sku" :"Infinix6",
+        "name" : "Infinix Smart 6 HD",
+        "price" : "8999",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/2/i/c/-original-imaggvx8zyfjwqyb.jpeg"
+    },
+    {
+        "name" : "POCO M4 5G",
+        "sku" : "5",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/l2jcccw0/mobile/i/1/y/-original-imagdu8gtefvchbn.jpeg"
+    },
+    {
+        "name" : "POCO X4 Pro 5G",
+        "sku" : "pocox45",
+        "price" : "25,999",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/l19m93k0/mobile/q/f/w/-original-imagcv2dgezfbfet.jpeg"
+    },
+    {
+        "name" : "APPLE iPhone 14",
+        "sku" : "Apple14pro",
+        "price" : "79,900",
+        "imageUrl" : "https://rukminim1.flixcart.com/image/312/312/xif0q/mobile/b/u/f/-original-imaghxa5hvapbfds.jpeg"
+    }
+]
+

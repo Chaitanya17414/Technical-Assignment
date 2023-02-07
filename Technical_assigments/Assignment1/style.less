@@ -1,0 +1,267 @@
+@border-color: #496bc7;
+@border-color2:#6080bf;
+@font-black: #333;
+@font-white:  #fff;
+@dark-gradient: #8a878763;
+@background-color: #f6f6f6;
+@light-gradient: #dcd7d700;
+@gray-color: rgba(151, 151, 151, 0.748);
+@gray-color-2: rgb(235, 233, 233);
+
+//navbar
+
+body {
+    background: @background-color;
+    font-family: monospace;
+}
+.container{
+    margin: 30px auto;
+    width:72%;
+    .navbar-section {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1.5px  solid @border-color;
+        padding-bottom: 10px;
+            .icon-widget {
+                color: @gray-color;
+            
+                .fa-solid.fa-bars {
+                        padding: 6px;
+                        border-radius: 4px;
+                        background: @gray-color-2;
+                }
+            
+                .fa-solid.fa-grip {
+                        padding-left: 5px;
+                }
+            }
+            
+            .name-price-section {
+                display: flex;
+                column-gap: 10px;
+                .filter-section {
+                    .filters {
+                        margin: 0;
+                        padding: 5px;
+                        border: 1px solid @border-color;
+                        background: @border-color;
+                        color: @font-white;
+                        border-radius: 6px; 
+                        cursor: pointer;
+                        .fa-solid.fa-arrow-down-wide-short {
+                        }
+                    }
+                    .filter-container {
+                        position: absolute;
+                        overflow-y: scroll;
+                        background: #fff;
+                        width: 260px;
+                        height: 200px;
+                        left: 50%;
+                        border-radius: 10px;
+                        padding: 10px 20px;
+                        box-shadow: 0 3px 8px 7px rgba(0, 0, 0, 0.21);
+                        margin-top: 10px;
+                        display: none;
+                        .filter-input {
+                            padding: 5px;
+                            margin-right: 10px;
+                            border: 1px solid @dark-gradient;
+                            background: transparent;
+                        }
+                    }
+        
+                    .filter-container::-webkit-scrollbar {
+                        width: 8px;
+                    }
+                    .show-filter-container {
+                        display: block;
+                    }
+                     .slider-box {
+                        width: 90%;
+                        margin: 10px auto;
+                        #priceRange {
+                                border: none;
+                                display: inline-block;
+                                margin-right: -4px;
+                                vertical-align: top;
+                                width: 100%;
+                        }
+                        .ui-slider-range.ui-widget-header.ui-corner-all {
+                            background: @border-color2;
+                        }
+                        .slider {
+                            margin: 20px 0
+                        }
+                    }
+                
+                }
+               
+            }
+        label {
+            font-size: 14px;
+        }
+        select {
+            border: 1px solid @gray-color-2;
+            background: transparent;
+            color: @border-color;
+            font-size: 12px;
+            padding: 3px;
+            font-weight: 600;
+            border-radius: 4px;
+            &:focus {
+                outline: none;
+            }
+            option {
+                padding: 3px;
+                border: none;
+                &:hover {
+                    color: @font-white;
+                    background: @font-black;
+                }
+            }
+            
+        }
+    }
+}
+
+//products list and cart section
+
+.products-section {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 5%;
+    .products {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        flex-basis: 80%;
+        .product {
+            border-radius: 20px;
+            border: 1px solid @font-black;
+            background-image: linear-gradient(180deg, @dark-gradient, @font-white);
+            padding: 15px 10px;
+            text-align: center;
+            p {
+                font-size: 14px;
+                margin: 0;
+            }
+            img {
+                margin-bottom: 5px;
+            }
+            .bold {
+                font-weight: 600;
+            }
+            .addcart-btn {
+                    padding: 5px 30px;
+                    background: @border-color2;
+                    color: @font-black;
+                    border: 1px solid @border-color;white-space: nowrap;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    &:hover {
+                        background: @font-white;
+                        border: 1px solid @border-color;
+                    }
+                }
+        }
+    }
+    .cart-section {
+        border-radius: 8px;
+        border: 1px solid @font-black;
+        height: 100vh;
+        flex-basis: 20%;
+        display: none;
+        .mycart-headding {
+            text-align: center;
+            padding: 5px;
+            border-bottom: 1px solid @border-color;
+
+        }
+        .mycart-summary {
+            padding: 10px 20px;
+            border-bottom: 1px solid @border-color;
+            .product-data {
+                display: flex;
+                justify-content: space-between;
+                .productName,.productPrice {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        padding-bottom: 5px;
+                    }
+                }
+                .productHiddenPrice {
+                    display: none;
+                }
+            }
+        }
+        .discount {
+            padding: 3px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            .discount-input {
+                padding: 5px;
+                margin-right: 10px;
+                border: 1px solid @dark-gradient;
+                background: transparent;
+            }
+            .add-btn {
+                padding: 5px 30px;
+                    background: @border-color2;
+                    color: @font-black;
+                    border: 1px solid @border-color;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    &:hover {
+                        background: @font-white;
+                        border: 1px solid @border-color;
+                    }
+            }
+        }
+        .error {
+                color: red;
+                font-size: 12px;
+                margin:0;
+                padding: 5px 0;
+                display: none;
+        }
+        .sub-total {
+            padding: 15px 20px;
+            border-bottom: 1px solid @border-color;
+            border-top: 1px solid @border-color;
+            p {
+                font-size: 12px;
+                margin: 0;
+            }
+            .d-flex {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 5px;
+            }
+            .total-discount  {
+                list-style-type: none;
+                padding: 0;
+            }
+        }
+        .total {
+             font-weight: 600;
+             padding: 10px 20px;
+             font-size: 16px;
+             display: flex;
+             justify-content: space-between;
+    
+             p {
+                 margin: 0
+             }
+        }
+    }
+
+}

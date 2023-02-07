@@ -1,0 +1,241 @@
+body {
+  background: #f6f6f6;
+  font-family: monospace;
+}
+.container {
+  margin: 30px auto;
+  width: 72%;
+}
+.container .navbar-section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #496bc7;
+  padding-bottom: 10px;
+}
+.container .navbar-section .icon-widget {
+  color: rgba(151, 151, 151, 0.748);
+}
+.container .navbar-section .icon-widget .fa-solid.fa-bars {
+  padding: 6px;
+  border-radius: 4px;
+  background: #ebe9e9;
+}
+.container .navbar-section .icon-widget .fa-solid.fa-grip {
+  padding-left: 5px;
+}
+.container .navbar-section .name-price-section {
+  display: flex;
+  column-gap: 10px;
+}
+.container .navbar-section .name-price-section .filter-section .filters {
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #496bc7;
+  background: #496bc7;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.container .navbar-section .name-price-section .filter-section .filter-container {
+  position: absolute;
+  overflow-y: scroll;
+  background: #fff;
+  width: 260px;
+  height: 200px;
+  left: 50%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 3px 8px 7px rgba(0, 0, 0, 0.21);
+  margin-top: 10px;
+  display: none;
+}
+.container .navbar-section .name-price-section .filter-section .filter-container .filter-input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #8a878763;
+  background: transparent;
+}
+.container .navbar-section .name-price-section .filter-section .filter-container::-webkit-scrollbar {
+  width: 8px;
+}
+.container .navbar-section .name-price-section .filter-section .show-filter-container {
+  display: block;
+}
+.container .navbar-section .name-price-section .filter-section .slider-box {
+  width: 90%;
+  margin: 10px auto;
+}
+.container .navbar-section .name-price-section .filter-section .slider-box #priceRange {
+  border: none;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  width: 100%;
+}
+.container .navbar-section .name-price-section .filter-section .slider-box .ui-slider-range.ui-widget-header.ui-corner-all {
+  background: #6080bf;
+}
+.container .navbar-section .name-price-section .filter-section .slider-box .slider {
+  margin: 20px 0;
+}
+.container .navbar-section label {
+  font-size: 14px;
+}
+.container .navbar-section select {
+  border: 1px solid #ebe9e9;
+  background: transparent;
+  color: #496bc7;
+  font-size: 12px;
+  padding: 3px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.container .navbar-section select:focus {
+  outline: none;
+}
+.container .navbar-section select option {
+  padding: 3px;
+  border: none;
+}
+.container .navbar-section select option:hover {
+  color: #fff;
+  background: #333;
+}
+.products-section {
+  margin-top: 30px;
+  display: flex;
+  column-gap: 5%;
+}
+.products-section .products {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  flex-basis: 80%;
+}
+.products-section .products .product {
+  border-radius: 20px;
+  border: 1px solid #333;
+  background-image: linear-gradient(180deg, #8a878763, #fff);
+  padding: 15px 10px;
+  text-align: center;
+}
+.products-section .products .product p {
+  font-size: 14px;
+  margin: 0;
+}
+.products-section .products .product img {
+  margin-bottom: 5px;
+}
+.products-section .products .product .bold {
+  font-weight: 600;
+}
+.products-section .products .product .addcart-btn {
+  padding: 5px 30px;
+  background: #6080bf;
+  color: #333;
+  border: 1px solid #496bc7;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.products-section .products .product .addcart-btn:hover {
+  background: #fff;
+  border: 1px solid #496bc7;
+}
+.products-section .cart-section {
+  border-radius: 8px;
+  border: 1px solid #333;
+  height: 100vh;
+  flex-basis: 20%;
+  display: none;
+}
+.products-section .cart-section .mycart-headding {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid #496bc7;
+}
+.products-section .cart-section .mycart-summary {
+  padding: 10px 20px;
+  border-bottom: 1px solid #496bc7;
+}
+.products-section .cart-section .mycart-summary .product-data {
+  display: flex;
+  justify-content: space-between;
+}
+.products-section .cart-section .mycart-summary .product-data .productName,
+.products-section .cart-section .mycart-summary .product-data .productPrice {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.products-section .cart-section .mycart-summary .product-data .productName li,
+.products-section .cart-section .mycart-summary .product-data .productPrice li {
+  padding-bottom: 5px;
+}
+.products-section .cart-section .mycart-summary .product-data .productHiddenPrice {
+  display: none;
+}
+.products-section .cart-section .discount {
+  padding: 3px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.products-section .cart-section .discount .discount-input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #8a878763;
+  background: transparent;
+}
+.products-section .cart-section .discount .add-btn {
+  padding: 5px 30px;
+  background: #6080bf;
+  color: #333;
+  border: 1px solid #496bc7;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.products-section .cart-section .discount .add-btn:hover {
+  background: #fff;
+  border: 1px solid #496bc7;
+}
+.products-section .cart-section .error {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 0;
+  display: none;
+}
+.products-section .cart-section .sub-total {
+  padding: 15px 20px;
+  border-bottom: 1px solid #496bc7;
+  border-top: 1px solid #496bc7;
+}
+.products-section .cart-section .sub-total p {
+  font-size: 12px;
+  margin: 0;
+}
+.products-section .cart-section .sub-total .d-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.products-section .cart-section .sub-total .total-discount {
+  list-style-type: none;
+  padding: 0;
+}
+.products-section .cart-section .total {
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.products-section .cart-section .total p {
+  margin: 0;
+}
